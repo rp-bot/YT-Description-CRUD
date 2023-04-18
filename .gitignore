@@ -1,0 +1,5 @@
+# env
+.env
+
+# interpreter cache
+.pytest_cache
