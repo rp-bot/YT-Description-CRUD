@@ -1,7 +1,6 @@
 # env
-.env
-client_secret.json
-token.json
+.secrets
+.secrets/*
 
 # interpreter cache
 .pytest_cache
