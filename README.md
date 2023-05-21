@@ -36,7 +36,3 @@ Create-Read-Update-Delete stuff in your youtube channel. Makes things like updat
 
 -   [ ] to analyze what to keep and what not to keep in description
 -   [ ] to improve a title by understanding the context based on previous title.
-
-```
-
-```
