@@ -8,7 +8,7 @@ Create-Read-Update-Delete stuff in your youtube channel. Makes things like updat
     pipenv install
     ```
 -   make a copy of the `/.secrets.template` directory and rename it `/.secrets`
--   Make sure the directory ~~grays~~ out if you are using git
+-   Make sure the directory grays out if you are using git in vscode
 -   Rename the `.env.template` file to `.env`
 
 ## Setup
