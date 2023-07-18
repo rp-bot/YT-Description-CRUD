@@ -2,15 +2,13 @@ from dotenv import load_dotenv
 import os
 import googleapiclient.discovery
 
+ENV_path = os.path.join(".secrets", ".env")
+load_dotenv(dotenv_path=ENV_path)
 YOUTUBE_API_KEY = os.getenv('YOUTUBE_API')
 
 YOUTUBE = googleapiclient.discovery.build(
     'youtube', 'v3', developerKey=YOUTUBE_API_KEY)
 CHANNEL_ID = "UClFuyDo1OObdnZFCWA8pDXg"
-
-
-def config():
-    load_dotenv()
 
 
 def pull_data():

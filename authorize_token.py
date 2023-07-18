@@ -7,13 +7,13 @@ SCOPES = ['https://www.googleapis.com/auth/youtube.readonly',
           'https://www.googleapis.com/auth/youtube.force-ssl', 'https://www.googleapis.com/auth/youtube.upload']
 
 
-CLIENT_SECRET_FILE = 'client_secret.json'
-
+CLIENT_SECRET_FILE = os.path.join(".secrets", "client_secret.json")
+TOKEN_JSON_PATH = os.path.join(".secrets", "token.json")
 
 flow = InstalledAppFlow.from_client_secrets_file(
     CLIENT_SECRET_FILE, scopes=SCOPES)
 credentials = flow.run_local_server(port=0)
 
 # Save the credentials to a file for future use
-with open('token.json', 'w') as token_file:
+with open(TOKEN_JSON_PATH, 'w') as token_file:
     token_file.write(credentials.to_json())
