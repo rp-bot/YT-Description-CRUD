@@ -7,9 +7,13 @@ name = "pypi"
 python-dotenv = "*"
 google-api-python-client = "*"
 google-auth-oauthlib = "*"
+pillow = "*"
+pyqt5 = "*"
+pyqt5-tools = "*"
 
 [dev-packages]
 autopep8 = "*"
+page = "*"
 
 [requires]
 python_version = "3.11"
