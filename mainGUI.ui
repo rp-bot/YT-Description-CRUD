@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>704</width>
-    <height>489</height>
+    <width>883</width>
+    <height>785</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -68,7 +68,7 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>150</y>
+      <y>320</y>
       <width>301</width>
       <height>21</height>
      </rect>
@@ -81,17 +81,17 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>180</y>
+      <y>340</y>
       <width>301</width>
-      <height>101</height>
+      <height>111</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="update_btn">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>290</y>
+      <x>690</x>
+      <y>370</y>
       <width>111</width>
       <height>51</height>
      </rect>
@@ -104,7 +104,7 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>20</y>
+      <y>260</y>
       <width>301</width>
       <height>21</height>
      </rect>
@@ -117,7 +117,7 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>40</y>
+      <y>280</y>
       <width>301</width>
       <height>31</height>
      </rect>
@@ -126,13 +126,13 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="update_btn_2">
+   <widget class="QPushButton" name="update_title_btn">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>80</y>
+      <x>690</x>
+      <y>280</y>
       <width>111</width>
-      <height>51</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -148,6 +148,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="placeholderText">
+     <string>https://youtube.com/....</string>
+    </property>
    </widget>
    <widget class="QTextBrowser" name="read_video_desc">
     <property name="geometry">
@@ -162,13 +165,65 @@
      <string>Description</string>
     </property>
    </widget>
+   <widget class="QLabel" name="send_chatgpt_somthing">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>20</y>
+      <width>301</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ask Chat GPT for a better Title and Description</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="ask_chatgpt">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>40</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Could you write a title for a video that is about the IPhone.</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="gpt_response">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>80</y>
+      <width>301</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>response</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ask_btn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>40</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ask...</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>704</width>
+     <width>883</width>
      <height>22</height>
     </rect>
    </property>

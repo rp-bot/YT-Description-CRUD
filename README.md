@@ -24,13 +24,19 @@ Create-Read-Update-Delete stuff in your youtube channel. Makes things like updat
 #### CRUD
 
 1. [Google API Console](https://console.cloud.google.com/?hl=vi), Move the downloaded `client_secret.json` file into the `/.secrets` directory.
-2. run the `authorize_token.py`, Once the authorization succeeds, A `token.json` is generated. 
-3.  
+2. run the `authorize_token.py`, Once the authorization succeeds, A `token.json` is generated.
+3.
+
+## `Dev`
+
+```sh
+pyuic5 -x mainGUI.ui -o mainGUI.py
+```
 
 ## Usage
 
-- [ ] Get videos and any public facing data
-- [ ] Get and update description of a video
+-   [ ] Get videos and any public facing data
+-   [ ] Get and update description of a video
 
 ## Chat GPT ?
 

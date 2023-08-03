@@ -10,6 +10,7 @@ google-auth-oauthlib = "*"
 pillow = "*"
 pyqt5 = "*"
 pyqt5-tools = "*"
+openai = "*"
 
 [dev-packages]
 autopep8 = "*"

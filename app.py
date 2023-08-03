@@ -1,12 +1,16 @@
 import sys
 from PyQt5.QtWidgets import QApplication
 from mainGUI import Ui_MainWindow
-from PyQt5.QtWidgets import QMainWindow, QGraphicsScene, QGraphicsPixmapItem
+from PyQt5.QtWidgets import QMainWindow, QGraphicsScene, QGraphicsPixmapItem,QApplication
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 
 import urllib.request
+
 from read_only import get_video_details
+from GPT import get_response_from_ChatGPT
+
+from time import sleep
 
 
 class MyApp(QMainWindow, Ui_MainWindow):
@@ -14,6 +18,21 @@ class MyApp(QMainWindow, Ui_MainWindow):
         super(MyApp, self).__init__(parent)
         self.setupUi(self)
         self.link_input_box.returnPressed.connect(self.handleReturnPressed)
+        self.ask_btn.clicked.connect(self.handleAskButtonClicked)
+
+    def handleAskButtonClicked(self):
+        # Get the text from the QTextEdit
+
+        # Get the text from the QTextEdit
+        text = self.ask_chatgpt.toPlainText()
+        QApplication.setOverrideCursor(Qt.WaitCursor)
+        # Process the text with a delay to simulate a long-running operation
+        gpt_response = get_response_from_ChatGPT(text)
+        QApplication.restoreOverrideCursor()
+        # gpt_response = get_response_from_ChatGPT(text)
+        # result = process_text(text)
+
+        self.gpt_response.setText(gpt_response)
 
     def handleReturnPressed(self):
         link = self.link_input_box.text()
