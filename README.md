@@ -35,8 +35,8 @@ pyuic5 -x mainGUI.ui -o mainGUI.py
 
 ## Usage
 
--   [ ] Get videos and any public facing data
--   [ ] Get and update description of a video
+-   [X] Get videos and any public facing data
+-   [X] Get and update description of a video
 
 ## Chat GPT ?
 
