@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication
-from mainGUI import Ui_MainWindow
+from ui.mainGUI import Ui_MainWindow
 from PyQt5.QtWidgets import QMainWindow, QGraphicsScene, QGraphicsPixmapItem,QApplication
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
